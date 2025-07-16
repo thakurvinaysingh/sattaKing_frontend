@@ -3,10 +3,10 @@ import axios from "axios";
 
 export default function BlogSection() {
   const [content, setContent] = useState("");
-
+  const baseURL = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/contentblocks/slug/blog-section")
+      .get(`${baseURL}/api/contentblocks/slug/blog-section`)
       .then(res => {
         const block = res.data.data;
         setContent(block?.Content || "<div>Section not found.</div>");
