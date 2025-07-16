@@ -38,8 +38,8 @@ export default function App() {
             <Route path="dashboard" element={<AgentDashboard />} />
             <Route path="ghadi-results" element={<GhadiResults />} />
           </Route>
-          <Route path="/" element={<Navigate to="/agent/login" />} />
-          <Route path="/home" element={<PublicHome />} />
+          <Route path="/login" element={<Navigate to="/agent/login" />} />
+          <Route path="/" element={<PublicHome />} />
         </Routes>
       </Router>
     </AuthProvider>
