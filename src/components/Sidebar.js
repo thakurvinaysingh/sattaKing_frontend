@@ -9,6 +9,7 @@ const menu = [
   { text: "Ghadi", path: "/admin/ghadi" },
   { text: "Results", path: "/admin/results" },
   { text: "Assign Ghadi", path: "/admin/assign-ghadi" },
+  { text: "Content Blocks", path: "/admin/content-blocks" },
 ];
 
 export default function Sidebar({ open, setOpen }) {

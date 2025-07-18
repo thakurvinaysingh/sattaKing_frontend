@@ -1,56 +1,115 @@
-// src/components/public/Header.js
+// import React from "react";
+// import { FaHome } from "react-icons/fa";
+
+// const menu = [
+//   { label: "SATTA KING 786", color: "bg-blue-600" },
+//   { label: "SATTA CHART", color: "bg-blue-600" },
+//   { label: "TAJ SATTA KING", color: "bg-blue-600" },
+//   { label: "SATTA LEAK", color: "bg-green-600" },
+// ];
+
+// export default function Header() {
+//   return (
+//     <header className="border-b-2 border-red-700">
+//       <nav className="flex w-full overflow-x-auto no-scrollbar" style={{ WebkitOverflowScrolling: "touch" }}>
+//         {/* Home icon box - matches size to menu boxes */}
+//         <div
+//           className={`
+//             flex items-center justify-center bg-red-600 border-r-2 border-white
+//             flex-shrink-0
+//             min-w-[140px] h-[44px]   /* mobile */
+//             md:min-w-[160px] md:h-[54px]  /* medium */
+//             lg:min-w-[220px] lg:h-[68px]  /* large */
+//           `}
+//         >
+//           <FaHome
+//             className="
+//               text-white
+//               text-2xl
+//               md:text-3xl
+//               lg:text-4xl
+//             "
+//           />
+//         </div>
+//         {/* Menu items */}
+//         {menu.map((item, idx) => (
+//           <div
+//             key={item.label}
+//             className={`
+//               flex-shrink-0 flex-1 min-w-[140px] h-[44px]
+//               md:min-w-[160px] md:h-[54px]
+//               lg:min-w-[220px] lg:h-[68px]
+//               flex items-center justify-center
+//               border-l-2 border-white first:border-l-0
+//               text-white font-bold ${item.color}
+//               whitespace-pre-line px-2 md:px-0
+//               text-xs md:text-base lg:text-lg
+//             `}
+//           >
+//             <span className="text-white font-extrabold text-center drop-shadow-sm">
+//               {item.label}
+//             </span>
+//           </div>
+//         ))}
+//       </nav>
+//     </header>
+//   );
+// }
+
+
 import React from "react";
-import BannerCarousel from "./BannerCarousel";
+import { FaHome } from "react-icons/fa";
+
+const menu = [
+  { label: "SATTA KING 786", color: "bg-blue-600" },
+  { label: "SATTA CHART", color: "bg-blue-600" },
+  { label: "TAJ SATTA KING", color: "bg-blue-600" },
+  { label: "SATTA LEAK", color: "bg-green-600" },
+];
 
 export default function Header() {
   return (
     <header className="border-b-2 border-red-700">
-      {/* Menu Bar */}
-      <div className="flex w-full h-[54px]">
+      {/* Mobile: grid, md+: flex */}
+      <nav
+        className="
+          grid grid-cols-5
+          md:flex md:grid-cols-none md:overflow-x-auto md:no-scrollbar
+        "
+        style={{ WebkitOverflowScrolling: "touch" }}
+      >
         {/* Home icon */}
-        <div className="flex items-center justify-center bg-red-600 w-1/5 min-w-[90px]">
-        <span>+91 123 456 7890</span>
+        <div
+          className="
+            flex items-center justify-center bg-red-600 border-r-2 border-white
+            h-[44px]
+            md:min-w-[160px] md:h-[54px] md:flex-1
+            lg:min-w-[220px] lg:h-[68px]
+          "
+        >
+          <FaHome className="text-white text-2xl md:text-3xl lg:text-4xl" />
         </div>
-        {/* Menu buttons */}
-        <div className="flex-1 flex">
-          <div className="flex-1 flex items-center justify-center bg-blue-600 border-l-2 border-white text-white text-md font-bold">
-            SATTA KING 786
+        {/* Menu items */}
+        {menu.map((item, idx) => (
+          <div
+            key={item.label}
+            className={`
+              flex items-center justify-center
+              h-[44px] text-xs font-bold text-white ${item.color}
+              border-l-2 border-white first:border-l-0
+              text-center
+              md:min-w-[160px] md:h-[54px] md:text-base md:flex-1
+              lg:min-w-[220px] lg:h-[68px] lg:text-lg
+              px-1
+            `}
+          >
+            <span className="font-extrabold drop-shadow-sm w-full">
+              {item.label}
+            </span>
           </div>
-          <div className="flex-1 flex items-center justify-center bg-blue-600 border-l-2 border-white text-white text-md font-bold">
-            SATTA CHART
-          </div>
-          <div className="flex-1 flex items-center justify-center bg-blue-600 border-l-2 border-white text-white text-md font-bold">
-            TAJ SATTA KING
-          </div>
-          <div className="flex-1 flex items-center justify-center bg-green-600 border-l-2 border-white text-white text-md font-bold">
-            SATTA LEAK
-          </div>
-        </div>
-      </div>
-      {/* Banner image */}
-      {/* <div className="text-center">
-        
-        <BannerCarousel />
-      </div> */}
+        ))}
+      </nav>
     </header>
   );
 }
 
-// // src/components/public/Header.js
-// import React from "react";
-
-// export default function Header() {
-//   return (
-//     <header className="bg-yellow-300 border-b-2 border-red-700">
-//       <div className="flex justify-between items-center px-4 py-2 text-xs font-bold">
-//         <span>+91 123 456 7890</span>
-//         <span>Home</span>
-//         <span>Blog</span>
-//         {/* here same design */}
-//       </div>
-//       <div className="text-center">
-//         <img src="/banner1.webp" alt="Banner" className="w-full h-[300px] object-cover" />
-//       </div>
-//     </header>
-//   );
-// }

@@ -54,7 +54,7 @@ export default function SectionFooter() {
 
       {/* Copyright */}
       <div className="border-t border-gray-400 mt-3 pt-2 pb-1 text-center text-white text-xs font-serif">
-        Copyright © 2018-2023 - Satta King Fixed No.
+        Copyright © 2018-2028 
       </div>
     </footer>
   );

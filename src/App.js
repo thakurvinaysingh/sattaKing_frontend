@@ -13,6 +13,7 @@ import AssignGhadi from "./pages/admin/AssignGhadi";
 import AgentLogin from "./pages/agent/Login";
 import AgentDashboard from "./pages/agent/Dashboard";
 import GhadiResults from "./pages/agent/GhadiResults";
+import ContentBlockPage from "./pages/admin/ContentBlockPage";
 
 import PublicHome from "./pages/PublicHome"; 
 
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="ghadi" element={<Ghadi />} />
             <Route path="results" element={<Results />} />
             <Route path="assign-ghadi" element={<AssignGhadi />} />
+            <Route path="content-blocks" element={<ContentBlockPage />} />
           </Route>
           {/* Agent login */}
           <Route path="/agent/login" element={<AgentLogin />} />

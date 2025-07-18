@@ -6,7 +6,7 @@ export default function Section1() {
   const baseURL = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get("http://3.16.34.221:4000/api/contentblocks/slug/section-1")
+      .get(`${baseURL}/api/contentblocks/slug/section-1`)
       .then(res => {
         // Use capital "Content" to match your backend data!
         const block = res.data.data;
