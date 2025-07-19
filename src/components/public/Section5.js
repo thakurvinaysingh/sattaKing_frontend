@@ -1,24 +1,99 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import React, { useEffect, useState } from "react";
+// import axios from "axios";
+
+// export default function Section5() {
+//   const [content, setContent] = useState("");
+//   const baseURL = process.env.REACT_APP_BASE_URL;
+//   useEffect(() => {
+//     axios
+//       .get(`${baseURL}/api/contentblocks/slug/section-9`)
+//       .then(res => {
+//         const block = res.data.data;
+//         setContent(block?.Content || "<div>Section not found.</div>");
+//       });
+//   }, []);
+
+//   return (
+//     <section className="w-full">
+//       <div dangerouslySetInnerHTML={{ __html: content }} />
+//     </section>
+//   );
+// }
+
+// src/components/public/Section5.js
+import React from "react";
 
 export default function Section5() {
-  const [content, setContent] = useState("");
-  const baseURL = process.env.REACT_APP_BASE_URL;
-  useEffect(() => {
-    axios
-      .get(`${baseURL}/api/contentblocks/slug/section-5`)
-      .then(res => {
-        const block = res.data.data;
-        setContent(block?.Content || "<div>Section not found.</div>");
-      });
-  }, []);
-
   return (
-    <section className="w-full">
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+    <section className="w-full bg-gradient-to-b from-black to-[#266188] py-8 md:py-14">
+      <div className="max-w-xl mx-auto flex flex-col items-center text-center px-2">
+        {/* Top title */}
+        <div className="text-yellow-300 text-base md:text-lg font-bold mb-2">
+          👑मुखिया जी ऑनलाइन 👑<br />
+          सबसे ईमानदार खाईवाल<br />
+          <span className="text-white text-sm font-medium">
+            सबसे अच्छा रेट
+          </span>
+        </div>
+
+        <hr className="w-40 border-t border-white opacity-60 my-2" />
+
+        {/* Rate */}
+        <div className="text-white text-sm md:text-base font-semibold mb-1">
+          <span role="img" aria-label="fire">🔥</span> ▶️ &#123;&#123;RATE&#125;&#125; रेट ➡️<span role="img" aria-label="fire">🔥</span>
+        </div>
+        <div className="text-white text-sm md:text-base mb-1">
+          👉जोड़ी रेट : <span className="font-bold">10 k 1050</span>👈
+        </div>
+        <div className="text-white text-sm md:text-base mb-3">
+          👉हरूप रेट : <span className="font-bold">100 k 1050</span>👈
+        </div>
+
+        <hr className="w-40 border-t border-white opacity-60 my-2" />
+
+        {/* Time Table */}
+        <div className="text-yellow-300 text-base md:text-lg font-bold mb-3">
+          👑TIME TABLE👇
+        </div>
+        <div className="text-white text-xs md:text-sm font-semibold leading-relaxed mb-3 whitespace-pre-line">
+          {/* Updated time entries */}
+          NCR ••••••••••••➭ 1:45 PM{'\n'}
+          DELHI BAZAR ••••••••••➭ 2:45 PM{'\n'}
+          SHIRI GANESH ••••••••••➭ 4:15 PM{'\n'}
+          FARIDABAD ••••••••••••➭ 5:50 PM{'\n'}
+          GHAZIABAD ••••••••••••➭ 9:15 PM{'\n'}
+          GALI •••••••••••••••••➭ 11:15 PM{'\n'}
+          DISAWER ••••••••••••••➭ 4:00 AM
+        </div>
+
+        <hr className="w-40 border-t border-white opacity-60 my-2" />
+
+        {/* Payment Info */}
+        <div className="text-white text-[1rem] md:text-base font-bold mb-1">
+          ओन्ली व्हाट्सएप मैसेज
+        </div>
+        <div className="text-white text-xs md:text-sm font-medium mb-1">
+          {/* You can add more info here if needed */}
+        </div>
+
+        {/* Whatsapp Number */}
+        <div className="bg-white px-3 py-2 rounded mt-2 mb-2 inline-block">
+          <div className="text-black text-xs md:text-base font-extrabold mb-0">WHATSAPP NUMBER</div>
+          <div className="text-black text-base md:text-lg font-bold">9557297996</div>
+        </div>
+        <a
+          href="https://wa.me/9557297996"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-600 hover:bg-green-700 text-white font-bold rounded-full px-9 py-2 text-lg shadow transition"
+        >
+          WHATSAPP
+        </a>
+      </div>
     </section>
   );
 }
+
 
 
 // // src/components/public/Section5.js
