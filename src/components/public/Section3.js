@@ -113,31 +113,20 @@ export default function Section2() {
   return (
     <section className="w-full bg-white pb-2">
       {/* Main content */}
+
       <div className="relative max-w-6xl mx-auto flex flex-col items-center px-2">
-        {/* Left sticky info boxes */}
         <div className="fixed left-2 top-48 z-40 hidden md:block">
-          {/* <div className="bg-[#4699b6] text-white text-xs font-semibold rounded-xl px-2 py-1 text-center leading-snug shadow-md border border-white mb-2">
-            DEVA BHAI<br />
-            KHAIWAL<br />
-            जोड़ी रेट<br />
-            10 के 950<br />
-            खाई रेट<br />
-            100 के 950<br />
-            जल्दी से बुकिंग<br />
-            ज्वाइन करें
-          </div> */}
-              <div className="bg-[#4699b6] text-white text-[11px] font-semibold rounded-xl px-2 py-1 text-center leading-snug shadow-md border border-white mb-2">
-          👑 मुखिया जी ऑनलाइन 👑<br />
-          सबसे ईमानदार खाइवाल<br />
-          सबसे अच्छा रेट<br />
-          
-          👉 जोड़ी रेट:<br/>
-          10k 1050 👈<br />
-          👉 हरूप रेट: <br/>
-          100k 1050 👈
-        </div>
-
-
+          <div className="bg-[#4699b6] text-white text-[11px] font-semibold rounded-xl px-2 py-1 text-center leading-snug shadow-md border border-white mb-2">
+                  मुखिया जी  <br />
+                  ऑनलाइन <br />
+                    सबसे <br />
+                  ईमानदार खाइवाल   <br />
+                  
+                  जोड़ी रेट<br/>
+                  10 k 1050 <br />
+                  हरूप रेट <br/>
+                  100 k 1050
+          </div>
           <div className="bg-red-600 text-white text-xs font-semibold rounded-xl px-2 py-1 text-center leading-snug shadow-md border border-white mt-2">
             Play Online<br />
             Satta 100%<br />
@@ -150,37 +139,24 @@ export default function Section2() {
           </div>
         </div>
 
-        {/* Card-1: Big Image
+        {/* images */}
         <div className="w-full flex flex-col items-center pt-4">
           <div className="relative mx-auto">
             <img
               src="/images1.jpeg"
               alt="images"
-              className="max-w-full h-[370px] object-cover mx-auto  rounded"
+              className="
+                max-w-full
+                h-[160px]      // Small screens: smaller height
+                sm:h-[250px]   // Tablet: medium height
+                md:h-[370px]   // Desktop: original height
+                object-cover
+                mx-auto
+                rounded
+              "
             />
-           
           </div>
-         
-        </div> */}
-
-<div className="w-full flex flex-col items-center pt-4">
-  <div className="relative mx-auto">
-    <img
-      src="/images1.jpeg"
-      alt="images"
-      className="
-        max-w-full
-        h-[160px]      // Small screens: smaller height
-        sm:h-[250px]   // Tablet: medium height
-        md:h-[370px]   // Desktop: original height
-        object-cover
-        mx-auto
-        rounded
-      "
-    />
-  </div>
-</div>
-
+        </div>
 
         {/* Card-2: Yellow "Play Online" */}
         {/* <div className="w-full bg-[#ffc514] rounded-t-2xl rounded-b-xl mt-6 mb-2 px-4 py-4 flex flex-col items-center border border-yellow-400 shadow">
@@ -196,22 +172,24 @@ export default function Section2() {
         </div> */}
 
         {/* Bottom right: Telegram & WhatsApp images */}
-        <div className="fixed z-50 flex flex-col gap-3 right-7 bottom-6">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img
-              src="/telegram1.png"
-              alt="Telegram"
-              className="w-16 h-16 cursor-pointer drop-shadow-xl"
-            />
+       
+         <div className="fixed z-50 flex flex-col gap-3 right-4 bottom-4">
+         <a href="" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/telegram1.png"
+            alt="Telegram"
+            className="w-12 h-12 md:w-16 md:h-16 cursor-pointer drop-shadow-xl"
+          />
           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
-            <img
-              src="whatsapp1.png"
-              alt="WhatsApp"
-              className="w-16 h-16 cursor-pointer drop-shadow-xl"
-            />
-          </a>
-        </div>
+           <img
+            src="/whatsapp1.png"
+            alt="WhatsApp"
+            className="w-12 h-12 md:w-16 md:h-16 cursor-pointer drop-shadow-xl rounded-full"
+          />
+         </a>
+         </div>
+
       </div>
     </section>
   );

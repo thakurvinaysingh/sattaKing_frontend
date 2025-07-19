@@ -28,7 +28,7 @@ import { FaDownload } from "react-icons/fa";
 export default function Section6() {
   return (
     <section className="w-full min-h-screen">
-      {/* Gradient Header and Download Button */}
+    
       <div className="w-full py-7 px-2 flex flex-col items-center justify-center"
         style={{
           background: "linear-gradient(180deg, #e03285 0%, #fd8324 100%)",
@@ -45,12 +45,12 @@ export default function Section6() {
         </button>
       </div>
 
-      {/* Main Image Card */}
+    
       <div className="flex flex-col items-center justify-center mt-8 mb-4">
         <div className="relative mx-auto">
           <img
             src="/money1.png"
-            alt="Best Online Roulette"
+            alt="Images"
             className="w-[450px] h-[400px] object-cover rounded shadow-md"
           />
        

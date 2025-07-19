@@ -18,7 +18,7 @@ import Section2 from "../components/public/Section2";
 import Section3 from "../components/public/Section3";
 import Section4 from "../components/public/Section4";
 import Section5 from "../components/public/Section5";
-import Section6 from "../components/public/Section6";
+// import Section6 from "../components/public/Section6";
 import Section7 from "../components/public/Section7";
 import Section8 from "../components/public/Section8";
 
@@ -36,7 +36,7 @@ export default function PublicHome() {
       <Section3 />
       <Section4 />
       <Section5 />
-      <Section6 />
+      {/* <Section6 /> */}
       <Section7 />
       <Section8 />
       {/* <NotificationSection /> */}
