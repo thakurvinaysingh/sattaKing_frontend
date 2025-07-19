@@ -41,9 +41,11 @@ export default function Section2() {
       </div>
 
       {/* Card-2: Gradient Leak Jodi Dhamaka */}
-      <div className="relative w-full mt-1">
+      <div className="relative w-full ">
+       
+
         {/* Main card */}
-        <div className="bg-gradient-to-b from-black to-[#154850] rounded-xl p-10 text-center flex flex-col items-center min-h-[370px]">
+        <div className="bg-gradient-to-b from-black to-[#154850] p-10 text-center flex flex-col items-center min-h-[370px]">
           <div className="text-yellow-300 text-3xl font-extrabold mb-2 tracking-wide">
             LEAK JODI DHAMAKA
           </div>

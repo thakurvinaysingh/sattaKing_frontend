@@ -30,7 +30,7 @@ export default function Section1() {
   return (
     <section className="w-full">
       {/* Top dark/gradient box */}
-      <div className="bg-gradient-to-b from-[#10151a] to-[#16322c] p-6 rounded-b-xl text-center">
+      <div className="bg-gradient-to-b from-[#10151a] to-[#16322c] p-6  text-center">
         <div className="text-yellow-400 text-xl font-bold mb-2">
           आज की लीक जोड़ी यहाँ मिलेगी
         </div>
@@ -120,7 +120,7 @@ export default function Section1() {
       </div>
 
       {/* add new  */}
-      <div className="bg-gradient-to-b from-black to-[#14484e] rounded-xl p-8 text-center flex flex-col items-center">
+      <div className="bg-gradient-to-b from-black to-[#14484e]  p-8 text-center flex flex-col items-center">
         <div className="text-yellow-300 text-3xl font-extrabold mb-2 flex items-center justify-center gap-2">
           <span role="img" aria-label="fire">🔥</span>
           FEES GAME PASS KE BAD
