@@ -82,7 +82,7 @@ export default function Header() {
         <div
           className="
             flex items-center justify-center bg-red-600 border-r-2 border-white
-            h-[44px]
+            h-[60px]
             md:min-w-[160px] md:h-[54px] md:flex-1
             lg:min-w-[220px] lg:h-[68px]
           "
@@ -95,7 +95,7 @@ export default function Header() {
             key={item.label}
             className={`
               flex items-center justify-center
-              h-[44px] text-xs font-bold text-white ${item.color}
+              h-[60px] text-xs font-bold text-white ${item.color}
               border-l-2 border-white first:border-l-0
               text-center
               md:min-w-[160px] md:h-[54px] md:text-base md:flex-1
