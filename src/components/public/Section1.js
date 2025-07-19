@@ -53,7 +53,7 @@ export default function Section1() {
       </div>
 
 
- {/* Main Image Card */}
+      {/* Main Image Card */}
       <div className="flex flex-col items-center justify-center mt-8 mb-4">
         <div className="relative mx-auto">
           <img
@@ -61,9 +61,9 @@ export default function Section1() {
             alt="Images"
             className="w-[450px] h-[400px] object-cover rounded shadow-md"
           />
-       
+
         </div>
-                <a
+        <a
           href="https://chat.whatsapp.com/KrrDKOC3H91EKgDochF5L4?mode=ac_t"
           target="_blank"
           rel="noopener noreferrer"
@@ -78,11 +78,11 @@ export default function Section1() {
       <div className="p-4 flex flex-col gap-8">
         {/* First card */}
         <div className="relative border-4 border-blue-700 rounded-xl p-6 bg-white flex flex-col min-h-[300px]">
-         
+
           {/* Main content */}
           <div className="flex flex-col items-center">
             <div className="text-lg font-bold text-black mb-2 text-center">
-              FARIDABAD | GAZIYABAD | GALI | DS <br/>
+              FARIDABAD | GAZIYABAD | GALI | DS <br />
               <span className="text-orange-600 font-bold">
                 🔥 DIRECT COMPANY SE LEAK JODI 🔥
               </span>
@@ -94,12 +94,12 @@ export default function Section1() {
             <div className="text-green-600 text-xl font-bold mb-3">ADD</div>
             <button className="bg-red-600 hover:bg-red-700 transition text-white text-lg font-bold rounded-full px-7 py-2">DELHI SATTA BAZAR</button>
           </div>
-         
+
         </div>
 
         {/* Second card */}
         <div className="relative border-4 border-blue-700 rounded-xl p-6 bg-white flex flex-col min-h-[300px]">
-         
+
           {/* Main content */}
           <div className="flex flex-col items-center">
             <div className="text-lg font-bold text-black mb-2 text-center">
@@ -115,37 +115,37 @@ export default function Section1() {
             <div className="text-green-600 text-xl font-bold mb-3">ADD</div>
             <button className="bg-red-600 hover:bg-red-700 transition text-white text-lg font-bold rounded-full px-7 py-2">DELHI SATTA BAZAR</button>
           </div>
-         
+
         </div>
       </div>
 
       {/* add new  */}
       <div className="bg-gradient-to-b from-black to-[#14484e] rounded-xl p-8 text-center flex flex-col items-center">
-          <div className="text-yellow-300 text-3xl font-extrabold mb-2 flex items-center justify-center gap-2">
-            <span role="img" aria-label="fire">🔥</span>
-            FEES GAME PASS KE BAD
-          </div>
-          <div className="text-white text-lg font-semibold mb-1 flex items-center justify-center gap-1">
-            <span role="img" aria-label="target">🎯</span>
-            FARIDABAD GAZIYABAD GALI DS
-            <span role="img" aria-label="target">🎯</span>
-          </div>
-          <div className="text-red-500 text-xl font-bold mb-1 flex items-center justify-center gap-1">
-            <span role="img" aria-label="100">💯</span>
-            <span className="underline">LEAK SINGLE JODI GAME</span>
-            <span role="img" aria-label="100">💯</span>
-          </div>
-          <div className="text-white text-lg font-semibold mb-1">MUMBAI HEAD BRANCH</div>
-          <div className="text-yellow-300 text-3xl font-extrabold mb-2 flex items-center justify-center gap-2">
-            <span role="img" aria-label="crown">👑</span>
-            SATTA KING
-            <span role="img" aria-label="crown">👑</span>
-          </div>
-          <div className="text-white text-2xl font-bold mb-4">ADD</div>
-          <button className="bg-red-600 hover:bg-red-700 transition text-white text-2xl font-bold rounded-full px-12 py-3 mt-2">
-            SATTA KING
-          </button>
+        <div className="text-yellow-300 text-3xl font-extrabold mb-2 flex items-center justify-center gap-2">
+          <span role="img" aria-label="fire">🔥</span>
+          FEES GAME PASS KE BAD
         </div>
+        <div className="text-white text-lg font-semibold mb-1 flex items-center justify-center gap-1">
+          <span role="img" aria-label="target">🎯</span>
+          FARIDABAD GAZIYABAD GALI DS
+          <span role="img" aria-label="target">🎯</span>
+        </div>
+        <div className="text-red-500 text-xl font-bold mb-1 flex items-center justify-center gap-1">
+          <span role="img" aria-label="100">💯</span>
+          <span className="underline">LEAK SINGLE JODI GAME</span>
+          <span role="img" aria-label="100">💯</span>
+        </div>
+        <div className="text-white text-lg font-semibold mb-1">MUMBAI HEAD BRANCH</div>
+        <div className="text-yellow-300 text-3xl font-extrabold mb-2 flex items-center justify-center gap-2">
+          <span role="img" aria-label="crown">👑</span>
+          SATTA KING
+          <span role="img" aria-label="crown">👑</span>
+        </div>
+        <div className="text-white text-2xl font-bold mb-4">ADD</div>
+        <button className="bg-red-600 hover:bg-red-700 transition text-white text-2xl font-bold rounded-full px-12 py-3 mt-2">
+          SATTA KING
+        </button>
+      </div>
 
     </section>
   );

@@ -111,10 +111,10 @@ import React from "react";
 
 export default function Section2() {
   return (
-    <section className="w-full bg-white pb-2">
+    <section className="w-full bg-white pb-0">
       {/* Main content */}
 
-      <div className="relative max-w-6xl mx-auto flex flex-col items-center px-2">
+      <div className="bg-yellow-200 relative max-w-8xl mx-auto flex flex-col items-center px-2">
         <div className="fixed left-2 top-48 z-40 hidden md:block">
           <div className="bg-[#4699b6] text-white text-[11px] font-semibold rounded-xl px-2 py-1 text-center leading-snug shadow-md border border-white mb-2">
                   मुखिया जी  <br />
@@ -140,16 +140,16 @@ export default function Section2() {
         </div>
 
         {/* images */}
-        <div className="w-full flex flex-col items-center pt-4">
+        <div className=" bg-yellow-200 w-full flex flex-col items-center pt-4">
           <div className="relative mx-auto">
             <img
               src="/images1.jpeg"
               alt="images"
               className="
                 max-w-full
-                h-[160px]      // Small screens: smaller height
+                h-[110px]      // Small screens: smaller height
                 sm:h-[250px]   // Tablet: medium height
-                md:h-[370px]   // Desktop: original height
+                md:h-[250px]   // Desktop: original height
                 object-cover
                 mx-auto
                 rounded
@@ -158,18 +158,9 @@ export default function Section2() {
           </div>
         </div>
 
-        {/* Card-2: Yellow "Play Online" */}
-        {/* <div className="w-full bg-[#ffc514] rounded-t-2xl rounded-b-xl mt-6 mb-2 px-4 py-4 flex flex-col items-center border border-yellow-400 shadow">
-          <div className="text-3xl md:text-2xl font-extrabold text-red-600 text-center mb-3">
-            PLAY ONLINE GAME
-          </div>
-          <div className="text-black text-xl md:text-xl font-bold text-center mb-6">
-            Online game khelne ke liye niche diye hue link se app Ko download Karen
-          </div>
-          <button className="bg-red-600 hover:bg-red-700 transition text-white text-xl font-extrabold rounded-full px-12 py-3 mt-2 shadow-lg">
-            DOWNLOAD
-          </button>
-        </div> */}
+
+
+
 
         {/* Bottom right: Telegram & WhatsApp images */}
        

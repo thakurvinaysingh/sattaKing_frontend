@@ -26,7 +26,7 @@ import React from "react";
 
 export default function Section4() {
   return (
-    <section className="w-full bg-white py-2">
+    <section className="w-full bg-white py-2 bg-yellow-200">
       <div className="w-full flex flex-col gap-6 px-1 md:px-5 max-w-[1800px] mx-auto">
         {/* Card 1 */}
         <div className="relative border-4 border-blue-700 rounded-xl p-3 md:p-7 bg-white flex flex-col min-h-[180px]">
